@@ -64,7 +64,7 @@ class FPS extends TextField
 			text =
 			currentFPS + " FPS" +
 			(ClientPrefs.showMem ? "\nMemory: " + memoryMegas + " MB" : "") +
-			(ClientPrefs.showLore ? "\nLore v" + (MainMenuState.loreEngineVersion.endsWith(".0") ? MainMenuState.loreEngineVersion.replace(".0", "") : MainMenuState.loreEngineVersion) : "")
+			(ClientPrefs.showLore ? "\nStick v" + (MainMenuState.loreEngineVersion.endsWith(".0") ? MainMenuState.loreEngineVersion.replace(".0", "") : MainMenuState.loreEngineVersion) : "")
 			#if debug + " (debug)" #end;
 			var mod:Int = (text.split("\n").length == 2) ? 39 : (text.split("\n").length == 3) ? 53 : 22;
 			if (ClientPrefs.fpsPosition == "TOP LEFT") 
